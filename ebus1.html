@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+
+     <head>
+
+         <!-- title -->
+
+          <title>Select Product</title>
+
+          
+
+          <!-- refer to jQuery -->
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+          
+
+          <!-- refer to javascript -->
+
+          <script type="text/javascript" src="cost_calc.js"></script>
+
+          
+
+     </head>
+
+     
+
+     <body align="center">
+
+     
+
+         <!-- heading -->
+
+         <h3>Select Product</h3>
+
+         
+
+         <br />
+
+         
+
+         <!-- posting on to next page -->
+
+         <form method="POST" action="Ebus2.php">
+
+         
+
+         <!-- salesforce radio button -->
+
+            <label for="Multiexperience">
+
+                <input type="radio" id="Multiexperience" name="product" checked onClick="disablebtnProceed()"/>
+
+                Multiexperience @ $500
+
+            </label>
+
+            
+
+            <br />
+
+            <br />
+
+            <br />
+
+            
+
+         <!-- Hyperautomation button -->    
+
+            <label for="Hyperautomation">
+
+                <input type="radio" id="Hyperautomation" name="product" checked onClick="disablebtnProceed()"/>
+
+                Hyperautomation @ $200
+
+            </label>
+
+            
+
+            <br />
+
+            <br />
+
+            <br />
+
+            
+
+         <!-- Distributed Cloud radio button -->    
+
+            <label for="Distributed Cloud">
+
+                <input type="radio" id="Distributed Cloud" name="product" checked onClick="disablebtnProceed()"/>
+
+                Distributed Cloud @ $1000
+
+            </label>
+
+            
+
+            <br />
+
+            <br />
+
+            <br />
+
+
+            
+
+         <!-- subtotal textbox -->    
+
+            <label for="Subtotal">
+
+                Sub Total
+
+                <input type="text" id="Subtotal" name="Subtotal" value="0.00" readonly/>
+
+            </label>
+
+            
+
+            <br />
+
+            <br />
+
+            <br /> 
+
+            
+
+         <!-- discount textbox -->    
+
+            <label for="Discount">
+
+                Discount @ 5% 
+
+                (- discount)
+
+                <input type="text" id="Discount" name="Discount" value="0.00" readonly/>
+
+            </label>
+
+            
+
+            <br /> 
+
+            <br />
+
+            <br />
+
+            
+
+         <!-- vat textbox -->    
+
+            <label for="Vat">
+
+                Vat @ 20%
+
+                <input type="text" id="Vat" name="Vat" value="0.00" readonly/>
+
+            </label>
+
+            
+
+            <br />
+
+            <br />
+
+            <br />
+
+            
+
+         <!-- total textbox -->    
+
+            <label for="Total">
+
+                Total (- discount + vat)
+
+                <input type="text" id="Total" name="Total" value="0.00" readonly/>
+
+            </label>
+
+            
+
+            <br />
+
+            <br />
+
+            <br />
+
+            
+
+         <!-- button to submit -->    
+
+            <button type="submit" id="btnProceed" disabled>Add to shopping cart</button>
+
+            
+
+        </form>
+
+        
+
+        <br />
+
+        
+
+        <!-- button to calculate cost and clear selections -->
+
+        <button style="font-size:15px;" onClick="calcSub()">Calculate cost</button>
+
+        
+
+        <a href="Ebus1.html"><button style="font-size:15px; background-color:black; color:white;">Clear Choice</button></a>
+
+        
+
+        <br />
+
+        <br />
+
+        
+
+        <!-- button to homepage -->
+
+        <a href="Homepage.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9kXqwVS9KhCmGPVPj_ZK_3dRqEHLSwzLIU4hQ1QW25ABtmXYVfw" alt"homepage" height="75" width="75"></a>
+
+        
+
+        <br />
+
+        <br />
+
+        
+
+        <!-- footer -->
+
+        <div id = "Footer">
+
+              <p>Copyright 2020 &COPY; All Rights Reserved. Design By Sean Barry</p>
+
+          </div>
+
+        
+
+        
+
+    </body>
+
+</html>
